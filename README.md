@@ -1,4 +1,4 @@
 nbastats
 ========
 
-Compare stats of different NBA teams using www.basketball-reference.com
+Very simple web scraper using python and www.basketball-reference.com for self-education purposes
