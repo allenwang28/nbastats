@@ -63,6 +63,29 @@ def process_calendar():
         i += 8
     return games
 
-
+def today():
+    day = date.today()
+    days = { 0: 'Mon',
+        1: 'Tue',
+        2: 'Wed',
+        3: 'Thu',
+        4: 'Fri',
+        5: 'Sat',
+        6: 'Sun'
+    }
+    months = { 1: 'Jan',
+        2: 'Feb',
+        3: 'Mar',
+        4: 'Apr',
+        5: 'May',
+        6: 'Jun',
+        7: 'Jul',
+        8: 'Aug',
+        9: 'Sep',
+        10: 'Oct',
+        11: 'Nov',
+        12: 'Dec'
+    }
+    return "%s, %s %d, %d" % (days[day.weekday()], months[day.month], day.day, day.year) 
 if __name__ == "__main__":
-    print all_wins_losses()
+    print today()

@@ -16,7 +16,11 @@ class Team:
         self.vs[other_team_name] = w_l;
 
     def conference(self):
-        return "East" if self.division in Team.east_conference else "West"
+        #return "East" if self.division in Team.east_conference else "West"
+        if self.division in Team.east_conference:
+            return "East"
+        else:
+            return "West"
   
     def set_seed(self, seed):
         self.seed = seed
